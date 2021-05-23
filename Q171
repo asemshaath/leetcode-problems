@@ -1,0 +1,16 @@
+class Solution(object):
+    def titleToNumber(self, columnTitle):
+        """
+        :type columnTitle: str
+        :rtype: int
+        """
+        
+        r = 0
+        size = len(columnTitle)
+        
+        for i in range(size):
+            
+            r = r*26 + (ord(columnTitle[i]) - ord('A') + 1)
+        
+        
+        return r
